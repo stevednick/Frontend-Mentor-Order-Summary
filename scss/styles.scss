@@ -129,10 +129,11 @@ body{
 }
 
 .attribution{
-  place-self: end center;
+  position: absolute;
+  bottom: 0.5rem;
+  width: 100%;
   font-size: 11px;
   text-align: center;
-  margin-bottom: 4rem;
 }
 
 .attribution a{
