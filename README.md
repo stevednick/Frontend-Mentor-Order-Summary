@@ -28,12 +28,12 @@ Users should be able to:
 ### Screenshots
 
 [Full Size](./screenshots/full-size.png)
+
 [Mobile](./screenshots/mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [See the live Site](https://stevednick.github.io/Frontend-Mentor-Order-Summary/)
 
 ## My process
 
