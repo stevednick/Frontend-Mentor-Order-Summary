@@ -1,0 +1,190 @@
+// Primary
+
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+
+// Neutral
+
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+body{
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: $pale-blue;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+}
+//
+.container{
+  display: grid;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.order-box{
+  background-color: white;
+  place-self: center;
+  max-width: 20.5rem;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 11px 26px 0px rgba(56,41,224,0.25);
+  box-shadow: 0px 11px 26px 0px rgba(56,41,224,0.25);
+}
+
+.dancing-image{
+  width: 100%;
+}
+
+.title{
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-top: 1.8rem;
+}
+
+.description-text{
+  color: $desaturated-blue;
+  font-weight: 500;
+  line-height: 1.7rem;
+  font-size: 0.95rem;
+  margin: 0.7rem 2.4rem;
+}
+
+.plan-box{
+  height: 5rem;
+  background-color: $very-pale-blue;
+  margin: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.music-icon{
+  margin: 1rem;
+}
+
+.plan-text-holder{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+.plan-text, .price-text{
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.plan-text{
+  font-weight: 900;
+}
+
+.price-text{
+  font-weight: 500;
+  color: $desaturated-blue;
+}
+
+.change-link{
+  font-size: 0.8rem;
+  align-self: center;
+  margin-left: auto;
+  margin-right: 1rem;
+  color: $bright-blue;
+  font-weight: 900;
+}
+
+.proceed-button{
+  height: 3rem;
+  background-color: $bright-blue;
+	color: inherit;
+	border: none;
+	cursor: pointer;
+	outline: inherit;
+  margin: 0.5rem 1.5rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 11px 26px 0px rgba(56,41,224,0.25);
+  box-shadow: 0px 11px 26px 0px rgba(56,41,224,0.25);
+}
+
+.change-link:hover, .proceed-button:hover{
+  opacity: 50%;
+}
+
+.cancel-button{
+  color: $desaturated-blue;
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-decoration: none;
+  margin: 1.3rem auto 1.8rem auto;
+}
+
+.cancel-button:hover{
+  color: black;
+}
+
+.attribution{
+  place-self: end center;
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.attribution a{
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-size: 100%;
+    background-position: top center;
+  }
+}
+
+@media only screen and (min-width: 600px){
+  .order-box{
+    max-width: 28rem;
+    border-radius: 20px;
+  }
+
+  .title{
+    font-size: 1.75rem;
+    margin-top: 2.9rem;
+  }
+  .description-text{
+    line-height: 1.7rem;
+    font-size: 1rem;
+    margin: 0rem 3.5rem;
+  }
+  .plan-box{
+    height: 6rem;
+    margin: 1.2rem 2.9rem;
+    border-radius: 10px;
+  }
+  .music-icon{
+    margin: 1.5rem;
+  }
+  .plan-text-holder{
+    padding: 1rem 0 1.4rem;
+  }
+  .price-text, .plan-text{
+    font-size: 1rem;
+  }
+  .change-link{
+    font-size: 0.9rem;
+    margin-right: 1.5rem;
+  }
+  .proceed-button{
+    margin: 0.7rem 3rem;
+    font-size: 0.96rem;
+  }
+  .cancel-button{
+    margin-bottom: 3rem;
+  }
+}
