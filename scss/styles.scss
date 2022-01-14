@@ -12,10 +12,12 @@ $dark-blue: hsl(223, 47%, 23%);
 body{
   font-family: 'Red Hat Display', sans-serif;
   background-color: $pale-blue;
-  background-image: url("../images/pattern-background-desktop.svg");
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-size: 100%;
+  background-position: top center;
   background-repeat: no-repeat;
 }
-//
+
 .container{
   display: grid;
   min-height: 100vh;
@@ -129,26 +131,19 @@ body{
 }
 
 .attribution{
-  position: absolute;
-  bottom: 0.5rem;
-  width: 100%;
+  margin-top: 1rem;
+  place-self: end center;
   font-size: 11px;
-  text-align: center;
 }
 
 .attribution a{
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width: 600px){
-  body{
-    background-image: url("../images/pattern-background-mobile.svg");
-    background-size: 100%;
-    background-position: top center;
-  }
-}
-
 @media only screen and (min-width: 600px){
+  body{
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
   .order-box{
     max-width: 28rem;
     border-radius: 20px;
