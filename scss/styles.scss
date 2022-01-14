@@ -18,6 +18,10 @@ body{
   background-repeat: no-repeat;
 }
 
+a, button{
+  transition: ease .3s;
+}
+
 .container{
   display: grid;
   min-height: 100vh;
@@ -100,8 +104,8 @@ body{
   background: none;
 }
 
-.proceed-button{
-  height: 3rem;
+.proceed-link{
+  padding: 1rem 0;
   background-color: $bright-blue;
 	color: white;
   margin: 0.5rem 1.5rem;
@@ -110,9 +114,10 @@ body{
   font-weight: 700;
   -webkit-box-shadow: 0px 11px 26px 0px rgba(56,41,224,0.25);
   box-shadow: 0px 11px 26px 0px rgba(56,41,224,0.25);
+  cursor: pointer;
 }
 
-.change-button, .proceed-button{
+.change-button{
 	border: none;
 	padding: 0;
 	font: inherit;
@@ -120,7 +125,7 @@ body{
 	outline: inherit;
 }
 
-.change-button:hover, .proceed-button:hover{
+.change-button:hover, .proceed-link:hover{
   opacity: 50%;
 }
 
@@ -182,7 +187,7 @@ body{
     font-size: 0.9rem;
     margin-right: 1.5rem;
   }
-  .proceed-button{
+  .proceed-link{
     margin: 0.7rem 3rem;
     font-size: 0.96rem;
   }
